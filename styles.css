@@ -1,3 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+main {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+}
+
+header {
+  text-align: justify;
+  font-size: 2rem;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
 ul > .style-none {
   list-style-type: none;
 }
