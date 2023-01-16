@@ -10,7 +10,7 @@
 <body>
   <main id="main-doc">
     <section class="main-section" id="Introduction_to_HTML">
-      <header>Introduction to HTML</header>
+      <header id="">Introduction to HTML</header>
       <p>
         At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This documentation will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
       </p>
@@ -19,15 +19,59 @@
       <header>What is HTML?</header>
       <p>
         HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:
-        <br>
-        <code>
-          My cat is grumpy
-        </code>
-        <br>
-        If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (<code><p></p></code>) element:
-        <br>
-        <code><p>My cat is very grumpy</p></code>
       </p>
+        <pre>
+        <samp>
+            My cat is grumpy
+        </samp>
+        </pre>
+        <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph
+          <code>(&lt;p&gt;&lt;p&gt;)</code> element: </p>  
+        <pre>
+            <code>&lt;p&gt; My cat is very grumpy &lt;/p&gt;</code>
+        </pre>
+        <p>
+          To make the word 'grumpy' appear bold, you may use the <code>(&lt;b&gt;&lt;/b&gt;)</code> tag:
+          <pre>
+            <code>&lt;p&gt; My cat is very &lt;b&gt;grumpy&lt;/b&gt;&lt;/p&gt;</code>
+          </pre>
+          This is the output: 
+          <pre>
+            <samp>
+            My cat is very <b>grumpy</b>
+            </samp>
+          </pre>
+        </p>
+        <p>
+          here are some of the other tags to style your text: 
+            <ul>
+             <li class="style-none">
+                <pre>
+                  <code>&lt;p&gt;My cat is very &lt;i&gt;grumpy&lt;/i&gt;&lt;/p&gt;</code>
+                </pre>
+             </li> 
+             <li class="style-none">
+                <pre>
+                  <code>&lt;p&gt;My cat is very &lt;em&gt;grumpy&lt;/em&gt;&lt;/p&gt;</code>
+                </pre>
+             </li> 
+             <li class="style-none">
+                <pre>
+                  <code>&lt;p&gt;My cat is very &lt;strong&gt;grumpy&lt;/strong&gt;&lt;/p&gt;</code>
+                </pre>
+             </li> 
+             <li class="style-none">
+                <pre>
+                  <code>&lt;p&gt;My cat is very &lt;sub&gt;grumpy&lt;/sub&gt;&lt;/p&gt;</code>
+                </pre>
+             </li> 
+             <li class="style-none">
+                <pre>
+                  <code>&lt;p&gt;My cat is very &lt;sup&gt;grumpy&lt;/sup&gt;&lt;/p&gt;</code>
+                </pre>
+             </li> 
+            </ul>
+        </p>
     </section>
     <section class="main-section" id="Content_Categories">
       <header>Content Categories</header>
@@ -65,7 +109,7 @@
         At a high level, microdata consists of a group of name-value pairs. The groups are called items, and each name-value pair is a property. Items and properties are represented by regular elements.
       </p>
       <span class="notes">
-        Note: More about itemtype attributes can be found at https://schema.org/Thing
+        Note: More about itemtype attributes can be found at <a href="https://schema.org/Thing" target="_blank" rel="noopener noreferrer">https://schema.org/Thing</a> 
       </span>
     </section>
     <section class="main-section" id="Microformats">
@@ -92,13 +136,14 @@
   <nav id="navbar">
     <header>HTML Documentation</header>
     <ul>
-      <li class="nav-link" href="#Introduction_to_HTML" >Introduction to HTML</li>
-      <li class="nav-link" href="Content_Categories">Content Categories</li>
-      <li class="nav-link" href="Block-level_Elements">Block-level Elements</li>
-      <li class="nav-link" href="Constraint_Validation">Constraint Validation</li>
-      <li class="nav-link" href="Microdata">Microdata</li>
-      <li class="nav-link" href="Microformats">Microformats</li>
-      <li class="nav-link" href="Viewport_Meta_Tag">Viewport Meta Tag</li>
+      <li ><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+      <li ><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+      <li ><a class="nav-link" href="#Content_Categories">Content Categories</a></li>
+      <li ><a class="nav-link" href="#Block-level_Elements">Block-level Elements</a></li>
+      <li ><a class="nav-link" href="#Constraint_Validation">Constraint Validation</a></li>
+      <li ><a class="nav-link" href="#Microdata">Microdata</a></li>
+      <li ><a class="nav-link" href="#Microformats">Microformats</a></li>
+      <li ><a class="nav-link" href="#Viewport_Meta_Tag">Viewport Meta Tag</a></li>
     </ul>
   </nav>
 </body>
