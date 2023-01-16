@@ -9,24 +9,96 @@
 </head>
 <body>
   <main id="main-doc">
-    <section class="main-section" id="Introduction_to_HTML"><header>Introduction to HTML</header></section>
-    <section class="main-section" id="Content_Categories"><header>Content Categories</header></section>
-    <section class="main-section" id="Block-level_Elements"><header>Block-level Elements</header></section>
-    <section class="main-section" id="Constraint_Validation"><header>Constraint Validation</header></section>
-    <section class="main-section" id="Microdata"><header>Microdata</header></section>
-    <section class="main-section" id="Microformat"><header>Microformat</header></section>
-    <section class="main-section" id="Viewport_Meta_Tag"><header>Viewport Meta Tag</header></section>
+    <section class="main-section" id="Introduction_to_HTML">
+      <header>Introduction to HTML</header>
+      <p>
+        At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This documentation will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
+      </p>
+    </section>
+    <section class="main-section" id="What_is_HTML?">
+      <header>What is HTML?</header>
+      <p>
+        HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:
+        <br>
+        <code>
+          My cat is grumpy
+        </code>
+        <br>
+        If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (<code><p></p></code>) element:
+        <br>
+        <code><p>My cat is very grumpy</p></code>
+      </p>
+    </section>
+    <section class="main-section" id="Content_Categories">
+      <header>Content Categories</header>
+      <p>
+        Most HTML elements are a member of one or more content categories — these categories group elements that share common characteristics. This is a loose grouping (it doesn't actually create a relationship among elements of these categories), but they help define and describe the categories' shared behavior and their associated rules, especially when you come upon their intricate details. It's also possible for elements to not be a member of any of these categories.
+      </p>
+      <p>There are three types of content categories: </p>
+      <ul>
+        <li>Main content categories, which describe common rules shared by many elements.</li>
+        <li>Form-related content categories, which describe rules common to form-related elements.</li>
+        <li>Specific content categories, which describe rare categories shared only by a few elements, sometimes only in a specific context.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Block-level_Elements">
+      <header>Block-level Elements</header>
+      <p>HTML (HyperText Markup Language) elements historically were categorized as either "block-level" elements or "inline-level" elements. Since this is a presentational characteristic it is nowadays specified by CSS in the Flow Layout. A Block-level element occupies the entire horizontal space of its parent element (container), and vertical space equal to the height of its contents, thereby creating a "block".
+      </p>
+      <span class="notes">
+        Note: A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+      </span>
+    </section>
+    <section class="main-section" id="Constraint_Validation">
+      <header>Constraint Validation</header>
+      <p>
+        The creation of web forms has always been a complex task. While marking up the form itself is easy, checking whether each field has a valid and coherent value is more difficult, and informing the user about the problem may become a headache. HTML5 introduced new mechanisms for forms: it added new semantic types for the <input> element and constraint validation to ease the work of checking the form content on the client side. Basic, usual constraints can be checked, without the need for JavaScript, by setting new attributes; more complex constraints can be tested using the Constraint Validation API.
+      </p>
+      <span class="notes">
+        Note: HTML Constraint validation doesn't remove the need for validation on the server side. Even though far fewer invalid form requests are to be expected, invalid ones can still be sent such as by bad people trying to trick your web application. Therefore, you need to always also validate input constraints on the server side, in a way that is consistent with what is done on the client side.
+      </span>
+    </section>
+    <section class="main-section" id="Microdata">
+      <header>Microdata</header>
+      <p>Microdata is part of the WHATWG HTML Standard and is used to nest metadata within existing content on web pages. Search engines and web crawlers can extract and process microdata from a web page and use it to provide a richer browsing experience for users. Search engines benefit greatly from direct access to this structured data because it allows search engines to understand the information on web pages and provide more relevant results to users. Microdata uses a supporting vocabulary to describe an item and name-value pairs to assign values to its properties. Microdata is an attempt to provide a simpler way of annotating HTML elements with machine-readable tags than the similar approaches of using RDFa and classic microformats.
+
+        At a high level, microdata consists of a group of name-value pairs. The groups are called items, and each name-value pair is a property. Items and properties are represented by regular elements.
+      </p>
+      <span class="notes">
+        Note: More about itemtype attributes can be found at https://schema.org/Thing
+      </span>
+    </section>
+    <section class="main-section" id="Microformats">
+      <header>Microformats</header>
+      <p>Microformats are standards used to embed semantics and structured data in HTML, and provide an API to be used by social web applications, search engines, aggregators, and other tools. These minimal patterns of HTML are used for marking up entities that range from fundamental to domain-specific information, such as people, organizations, events, and locations.
+      <br>
+        Microformats use supporting vocabularies to describe objects and name-value pairs to assign values to their properties. The properties are carried in class attributes that can be added to any HTML element, while the data values re-use HTML element content and semantic attributes.
+      </p>
+    </section>
+    <section class="main-section" id="Viewport_Meta_Tag">
+      <header>Viewport Meta Tag</header>
+      <p>The browser's viewport is the area of the window in which web content can be seen. This is often not the same size as the rendered page, in which case the browser provides scrollbars for the user to scroll around and access all the content.
+        <br>
+        Some mobile devices and other narrow screens render pages in a virtual window or viewport, which is usually wider than the screen, and then shrink the rendered result down so it can all be seen at once. Users can then pan and zoom to see different areas of the page. For example, if a mobile screen has a width of 640px, pages might be rendered with a virtual viewport of 980px, and then it will be shrunk down to fit into the 640px space.
+        <br>
+        A typical mobile-optimized site contains something like the following: 
+        <br>
+        <code>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </code>
+      </p>
+    </section>
   </main>
   <nav id="navbar">
     <header>HTML Documentation</header>
     <ul>
-      <li class="nav-link"></li>
-      <li class="nav-link"></li>
-      <li class="nav-link"></li>
-      <li class="nav-link"></li>
-      <li class="nav-link"></li>
-      <li class="nav-link"></li>
-      <li class="nav-link"></li>
+      <li class="nav-link" href="#Introduction_to_HTML" >Introduction to HTML</li>
+      <li class="nav-link" href="Content_Categories">Content Categories</li>
+      <li class="nav-link" href="Block-level_Elements">Block-level Elements</li>
+      <li class="nav-link" href="Constraint_Validation">Constraint Validation</li>
+      <li class="nav-link" href="Microdata">Microdata</li>
+      <li class="nav-link" href="Microformats">Microformats</li>
+      <li class="nav-link" href="Viewport_Meta_Tag">Viewport Meta Tag</li>
     </ul>
   </nav>
 </body>
