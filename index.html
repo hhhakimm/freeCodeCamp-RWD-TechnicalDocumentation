@@ -7,72 +7,82 @@
   <title>HTML Technical Documentation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main id="main-doc">
     <section class="main-section" id="Introduction_to_HTML">
-      <header>Introduction to HTML</header>
+      <header class="header-top">Introduction to HTML</header>
       <p>
         At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This documentation will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
       </p>
     </section>
-    <section class="main-section" id="What_is_HTML?">
+    <section class="main-section" id="What_is_HTML">
       <header>What is HTML?</header>
       <p>
         HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:
       </p>
+      <p>
         <pre>
-        <samp>
-            My cat is grumpy
-        </samp>
+            <samp class="tests test-1">My cat is grumpy</samp>
         </pre>
+      </p>
         <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph
-          <code>(&lt;p&gt;&lt;p&gt;)</code> element: </p>  
+          <code>(&lt;p&gt;&lt;/p&gt;)</code> element: </p>  
         <pre>
-            <code>&lt;p&gt; My cat is very grumpy &lt;/p&gt;</code>
+            <code class="tests">&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
         </pre>
         <p>
           To make the word 'grumpy' appear bold, you may use the <code>(&lt;b&gt;&lt;/b&gt;)</code> tag:
           <pre>
-            <code>&lt;p&gt; My cat is very &lt;b&gt;grumpy&lt;/b&gt;&lt;/p&gt;</code>
+            <code class="tests">&lt;p&gt;My cat is very &lt;b&gt;grumpy&lt;/b&gt;&lt;/p&gt;</code>
           </pre>
+        </p>
+        <p>
           This is the output: 
           <pre>
-            <samp>
-            My cat is very <b>grumpy</b>
-            </samp>
+            <samp class="tests">My cat is very <b>grumpy</b></samp>
           </pre>
         </p>
         <p>
           here are some of the other tags to style your text: 
-            <ul>
-             <li class="style-none">
-                <pre>
-                  <code>&lt;p&gt;My cat is very &lt;i&gt;grumpy&lt;/i&gt;&lt;/p&gt;</code>
-                </pre>
-             </li> 
-             <li class="style-none">
-                <pre>
-                  <code>&lt;p&gt;My cat is very &lt;em&gt;grumpy&lt;/em&gt;&lt;/p&gt;</code>
-                </pre>
-             </li> 
-             <li class="style-none">
+            <ul class="tests"> 
+             <li class="list-style-none">
                 <pre>
                   <code>&lt;p&gt;My cat is very &lt;strong&gt;grumpy&lt;/strong&gt;&lt;/p&gt;</code>
                 </pre>
              </li> 
-             <li class="style-none">
+             <li class="list-style-none">
                 <pre>
                   <code>&lt;p&gt;My cat is very &lt;sub&gt;grumpy&lt;/sub&gt;&lt;/p&gt;</code>
                 </pre>
              </li> 
-             <li class="style-none">
+             <li class="list-style-none">
                 <pre>
                   <code>&lt;p&gt;My cat is very &lt;sup&gt;grumpy&lt;/sup&gt;&lt;/p&gt;</code>
                 </pre>
              </li> 
+            </ul>
+        </p>
+        <p>
+          Here are the outputs: 
+            <ul class="tests">
+              <li class="list-style-none">
+                <pre>
+                  <samp><p>My cat is very <strong>grumpy</strong></p></samp>
+                </pre>
+              </li>
+              <li class="list-style-none">
+                <pre>
+                  <samp><p>My cat is very <sub>grumpy</sub></p></samp>
+                </pre>
+              </li>
+              <li class="list-style-none">
+                <pre>
+                  <samp><p>My cat is very <sup>grumpy</sup></p></samp>
+                </pre>
+              </li>
             </ul>
         </p>
     </section>

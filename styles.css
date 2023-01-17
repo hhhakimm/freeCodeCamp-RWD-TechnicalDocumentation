@@ -2,18 +2,59 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 main {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: absolute;
+  display: block;  
+  left: 250px;
+  padding: 2rem;
+  border-left: 2px solid #777;
+}
+
+section {
+  margin-bottom: 5rem;
 }
 
 header {
   text-align: justify;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
 }
 
-ul > .style-none {
+p {
+  margin-left: 1.3rem;
+  text-overflow: clip;
+}
+
+.header-top {
+  margin-top: 1rem;
+}
+
+
+.tests {
+  background-color: #EEEFFF;
+  display: inline-block;
+  padding: 0;
+  margin-left: -10px;
+}
+
+ul > .list-style-none {
   list-style-type: none;
+}
+
+/* Navbar */
+
+#navbar {
+  position: fixed;
+}
+
+#navbar > header {
+  font-size: 1.3rem;
 }
