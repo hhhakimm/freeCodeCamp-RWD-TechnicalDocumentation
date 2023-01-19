@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -46,42 +47,29 @@
           </pre>
         </p>
         <p>
-          here are some of the other tags to style your text: 
-            <ul class="tests"> 
-             <li class="list-style-none">
-                <pre>
-                  <code>&lt;p&gt;My cat is very &lt;strong&gt;grumpy&lt;/strong&gt;&lt;/p&gt;</code>
-                </pre>
-             </li> 
-             <li class="list-style-none">
-                <pre>
-                  <code>&lt;p&gt;My cat is very &lt;sub&gt;grumpy&lt;/sub&gt;&lt;/p&gt;</code>
-                </pre>
-             </li> 
-             <li class="list-style-none">
-                <pre>
-                  <code>&lt;p&gt;My cat is very &lt;sup&gt;grumpy&lt;/sup&gt;&lt;/p&gt;</code>
-                </pre>
-             </li> 
+          here are some of the other tags to style your text:</p>
+          <ul class="tests test-list"> 
+            <li class="list-style-none">
+              <code>&lt;p&gt;My cat is very &lt;strong&gt;grumpy&lt;/strong&gt;&lt;/p&gt;</code>
+            </li> 
+              <li class="list-style-none">
+                <code>&lt;p&gt;My cat is very &lt;sub&gt;grumpy&lt;/sub&gt;&lt;/p&gt;</code>
+              </li> 
+              <li class="list-style-none">
+                <code>&lt;p&gt;My cat is very &lt;sup&gt;grumpy&lt;/sup&gt;&lt;/p&gt;</code>
+              </li> 
             </ul>
-        </p>
         <p>
           Here are the outputs: 
-            <ul class="tests">
+            <ul class="tests test-list">
               <li class="list-style-none">
-                <pre>
-                  <samp><p>My cat is very <strong>grumpy</strong></p></samp>
-                </pre>
+                <samp><p>My cat is very <strong>grumpy</strong></p></samp>
               </li>
               <li class="list-style-none">
-                <pre>
-                  <samp><p>My cat is very <sub>grumpy</sub></p></samp>
-                </pre>
+                <samp><p>My cat is very <sub>grumpy</sub></p></samp>
               </li>
               <li class="list-style-none">
-                <pre>
-                  <samp><p>My cat is very <sup>grumpy</sup></p></samp>
-                </pre>
+                <samp><p>My cat is very <sup>grumpy</sup></p></samp>
               </li>
             </ul>
         </p>
@@ -103,7 +91,9 @@
       <p>HTML (HyperText Markup Language) elements historically were categorized as either "block-level" elements or "inline-level" elements. Since this is a presentational characteristic it is nowadays specified by CSS in the Flow Layout. A Block-level element occupies the entire horizontal space of its parent element (container), and vertical space equal to the height of its contents, thereby creating a "block".
       </p>
       <span class="notes">
-        Note: A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+        <span class="material-symbols-outlined">
+          error
+          </span>Note: A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
       </span>
     </section>
     <section class="main-section" id="Constraint_Validation">
@@ -112,7 +102,9 @@
         The creation of web forms has always been a complex task. While marking up the form itself is easy, checking whether each field has a valid and coherent value is more difficult, and informing the user about the problem may become a headache. HTML5 introduced new mechanisms for forms: it added new semantic types for the <code>&lt;input&gt;</code> element and constraint validation to ease the work of checking the form content on the client side. Basic, usual constraints can be checked, without the need for JavaScript, by setting new attributes; more complex constraints can be tested using the Constraint Validation API.
       </p>
       <span class="notes">
-        Note: HTML Constraint validation doesn't remove the need for validation on the server side. Even though far fewer invalid form requests are to be expected, invalid ones can still be sent such as by bad people trying to trick your web application. Therefore, you need to always also validate input constraints on the server side, in a way that is consistent with what is done on the client side.
+        <span class="material-symbols-outlined">
+          error
+          </span>Note: HTML Constraint validation doesn't remove the need for validation on the server side. Even though far fewer invalid form requests are to be expected, invalid ones can still be sent such as by bad people trying to trick your web application. Therefore, you need to always also validate input constraints on the server side, in a way that is consistent with what is done on the client side.
       </span>
     </section>
     <section class="main-section" id="Microdata">
@@ -122,7 +114,9 @@
         At a high level, microdata consists of a group of name-value pairs. The groups are called items, and each name-value pair is a property. Items and properties are represented by regular elements.
       </p>
       <span class="notes">
-        Note: More about itemtype attributes can be found at <a href="https://schema.org/Thing" target="_blank" rel="noopener noreferrer">https://schema.org/Thing</a> 
+        <span class="material-symbols-outlined">
+          error
+          </span>Note: More about itemtype attributes can be found at <a href="https://schema.org/Thing" target="_blank" rel="noopener noreferrer">https://schema.org/Thing</a> 
       </span>
     </section>
     <section class="main-section" id="Microformats">
